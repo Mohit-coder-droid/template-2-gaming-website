@@ -1,0 +1,556 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	min-height: 100vh;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #545454;
+    overflow-x: hidden;
+    background-image: url(https://template.hasthemes.com/bonx/bonx/assets/img/bg/body-bg.webp);
+    background-attachment: fixed;
+}
+
+
+.btn{
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: url(https://template.hasthemes.com/bonx/bonx/assets/img/others/btn-signup.webp) no-repeat;
+    font-size: 16px;
+    margin-right: 5vw;
+    margin-top: 24px;
+    transition: all 500ms ease;
+    background-position: center;
+    background-size: contain;
+}
+
+.btn:hover{
+	cursor: pointer;
+	word-spacing: 5px;
+}
+
+/*CSS for navbar starts from here*/
+nav{
+	/*background: green;*/
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	position: fixed;
+	width: 100vw;
+	z-index: 3;
+	background: transparent;
+	position: fixed;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+}
+
+nav ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 22px;
+    /*margin-left: 86px;*/	
+}
+nav li{
+	list-style-type: none;
+	margin-left: 1vw;
+    border-radius: 11% 89% 7% 93% / 84% 16% 84% 16%;
+    width: 101px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover
+{
+	background: #b154f0;
+}
+
+.left_nav{
+	float: left;
+	/*background: green;*/
+	margin-left: 30px;
+	margin-top:4px;
+}
+
+.center_nav{
+	float: left;
+	font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 2vw;
+    width: 54vw;
+}
+
+.right_nav{
+	float: right;
+    width: 10vw;
+    height: 4vw;
+}
+
+
+.hidden_navbar{
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(2 7 58 / 92%);
+	padding-top: 132px;
+	display: none;
+	justify-content: center;
+	position: fixed;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.hid_nav_item{
+	width: 50vw;
+	height: 50vh;
+	/*background: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -35vh;
+}
+.hid_nav_item ul{
+	display: block;
+	/*margin-top: 10vh;*/
+}
+
+.hid_nav_item li{
+	letter-spacing: 3px;
+	font-size: 28px;
+	font-weight: 100;
+	margin-top: 27px;
+	width: 135px;
+	height: 60px;
+}
+
+/*CSS for Hamburger Menu*/
+
+.menu-btn{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+	/*box-shadow: 0 2px 5px rgba(255,101,47,.2);*/
+	transition: all .5s ease-in-out;
+	/*border: 3px solid #fff;*/
+	cursor: pointer;
+	float: right;
+	display: none;
+}	
+
+.menu-btn_burger{
+	width: 40px;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+	transition: all .5s ease-in-out;
+	z-index: 3;
+	position: fixed;
+}
+
+
+
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before{
+	transform: translateY(-10px);
+}
+
+.menu-btn_burger::after{
+	transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn_burger{
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before{
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after{
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.hidden_navbar .menubar_open{
+	display: flex;
+}
+
+
+/*CSS for header starts  from here*/
+.header{
+	/*position: relative;*/
+	min-height: 110vh;
+	background: url(https://template.hasthemes.com/bonx/bonx/assets/img/bg/hero-bg1.webp) black center no-repeat;
+	background-attachment: fixed;
+	/*background: green;*/
+	display: inline-flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+.left_header{
+	width: 40vw;
+	/*background: tomato;*/
+	margin-top: 100px;
+	color: #fff;
+}
+
+.right_header{
+	width: 40vw;
+	/*background: yellow;*/
+	margin-top: 100px;
+}
+
+.right_header img{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.left_header h1{
+	font-size: 6vw;
+    line-height: 98px;
+    font-family: 'Metal Mania', cursive;
+    text-shadow: 3px 3px 0px #b154f0;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.left_header .ri_head_sub{
+	font-size: 24px;
+    font-weight: 600;
+    margin-top: 47px;
+}
+
+
+
+
+/*Designing of Gaming World starts from here*/
+.gaming_world{
+	min-height: 100vh;
+	width: 96vw;
+}
+
+.gaming_world h1{
+	font-size: 3vw;
+    line-height: 65px;
+    font-weight: 700;
+    /*color: #ffffff;*/
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+
+.gaming_world_inner{
+	width: 99vw;
+    min-height: 70vh;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*background: green;*/
+}
+
+.g_w_i_card{
+	width: 28vw;
+	height: 60vh	;
+	transition: all 1s ease-in-out;
+	background: url(https://template.hasthemes.com/bonx/bonx/assets/img/others/gaming-world-bg1.webp) no-repeat;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+}
+
+.g_world_card_profile{
+	display: flex;justify-content: center;align-items: center;
+}
+
+.gaming_world_inner_int{
+	width: 94%;
+	text-align: center;
+}
+
+.g_w_i_heading{
+	font-size: 25px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.g_w_i_para{
+	padding: 10px;
+}
+
+
+
+/*@media only screen and (max-width: 799px) {
+	.g_w_i_card {
+	    width: 80vw;
+	    height: 60vh;
+	    margin: 20px;
+	}
+}*/
+
+/*Styling of about starts from here*/
+.about{
+	width: 99vw;
+	min-height: 100vh;
+	background: linear-gradient(#09002994, #09002994), url(images/about.jfif), no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 10px;
+}
+
+.about_inner{
+	width: 99vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.about_innerc{
+	width: 420px;
+    min-height: 80vh;
+    /*background: tomato;*/
+    margin-top: 30px;
+    color: #fff;
+}
+
+.about_left{
+	background-image: url(file:///C:/Users/nidhi/Documents/Mohit/New%20folder/HTML/TRy1/images/about_img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about_right h1{
+	font-size: 60px;
+	font-family: 'Teko', sans-serif;
+    color: #fff;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about_right ul{
+	line-height: 36px;
+}
+
+.about_btn {
+    width: 200px;
+    text-align: center;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin-top: 25px;
+    border: 1px solid #ffcc01;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_btn:hover{
+	background: #ffcc01;
+}
+
+/*Styling of contact us starts from here*/
+.contact{
+	width: 99vw;
+	min-height: 57vh;
+	color: #fff;
+}
+
+.c_inner{
+	  width: 99vw;
+    /*background: green;*/
+    min-height: 34vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.c_inn_card{
+	width: 273px;
+	/*background: tomato;*/
+	height: 255px;
+}
+
+.c_inn_card1 p{
+	line-height: 33px;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+.c_inn_card2_inn{
+	line-height: 33px;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.ph:hover{
+	color: #b154f0;
+	cursor: pointer;
+}
+
+.c_inn_c_head{
+	font-size: 27px;
+}
+
+.c_inn_card2_inn_i{
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-width: 75px;
+	height: 70px;
+}
+
+.c_inn_card3_inn{
+	    height: 64%;
+    width: 255px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+
+.c_inn_card3_i{
+	line-height: 33px;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.c_inn_card3_i:hover{
+	color: #b154f0;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  .center_nav{
+    display: none;
+  }
+
+  .right_nav{
+  	width: 98px;
+  	height: 39px;
+  }
+
+  .menu-btn{
+  	display: flex;
+  }
+
+  .left_header{
+  	width: 600px;
+  	text-align: center;
+  }
+
+  .right_header{
+  	width: 600px;
+  }
+
+  .right_header img {
+	    width: 80%;
+	    margin-top: -71px;
+	}
+
+	.left_header .ri_head_sub{
+		margin: 0;
+	}
+
+	.left_header_btn{
+		width: 100vw;
+	    height: 60px;
+	    display: flex;
+	    justify-content: center;
+	    margin-top: 35px;
+	    font-size: 24px;
+	}
+
+	.about_right{
+		width: 100vw;margin-right: 31px;
+	}
+
+	.about{
+		text-align: center;
+	}
+
+	.g_w_i_card {
+	    width: 356px;
+	    height: 60vh;
+	    /*background: tomato;*/
+	    margin: 20px;
+	}
+	.gaming_world h1{
+		font-size: 26px;
+	}
+	.c_inn_card{
+		width: 300px !important;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.about_right_inner ul{
+		list-style-type: none;
+	}
+
+	.about-btn_cover{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+/*Designing of scrollbar starts from here*/
+::-webkit-scrollbar{
+	width: 12px;
+	/*height: 20px;*/
+   background-image: url(https://template.hasthemes.com/bonx/bonx/assets/img/bg/body-bg.webp);
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, #30ff00);
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent, #00c6ff);
+}
