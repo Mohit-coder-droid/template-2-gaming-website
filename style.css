@@ -350,7 +350,7 @@ nav li:hover
 }
 
 .about_left{
-	background-image: url(file:///C:/Users/nidhi/Documents/Mohit/New%20folder/HTML/TRy1/images/about_img.png);
+	background-image: url(images/about_img.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
