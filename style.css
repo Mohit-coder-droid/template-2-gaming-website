@@ -327,7 +327,7 @@ nav li:hover
 .about{
 	width: 99vw;
 	min-height: 100vh;
-	background: linear-gradient(#09002994, #09002994), url(images/about.jfif), no-repeat;
+	background: linear-gradient(#09002994, #09002994), url(https://live.envalab.com/html/eoorox/img/features/about_img.png), no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 10px;
